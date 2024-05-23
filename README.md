@@ -22,7 +22,7 @@ To build this text editor, i will start with an existing application and impleme
 
 ## Installations  💻
 
-Deployed link: TBD 
+Deployed link: https://randgbettertexteditor.onrender.com/ 
 
 To install dependencies, run these commands:
 
