@@ -41,9 +41,11 @@ TBD
   https://opensource.org/licenses/MIT
 
 ## Contributors 😃
-<a href="https://github.com/Erikrainer/RandG-SocialNetwork/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Erikrainer/RandG-SocialNetwork" />
+<a href="https://github.com/Erikrainer/RandGBetterTextEditor/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Erikrainer/RandGBetterTextEditor" />
 </a>
+
+Erikrainer
 
 ## Tests 🧪
 
