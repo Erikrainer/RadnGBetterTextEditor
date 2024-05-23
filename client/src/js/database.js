@@ -13,19 +13,19 @@ const initdb = async () =>
     },
   });
 
-// it`s called put but it`s a post that add data to the database
 export const putDb = async (content) => {
-  console.log('Post to the database');
+  console.log('Put to the database');
   const jateDb = await openDB ("jate", 1);
   const tx = jateDb.transaction("jate", "readwrite");
   const store = tx.objectStore("jate");
-  const request = store.add(
+  const request = store.put(
     {
-      content: content
+      id: 1, 
+      value: content,
     }
   );
   const result = await request;
-  console.log("Data saved to the daatabase", result);
+  console.log("Data saved to the daatabase", result.value);
 }
 
 // Get all the date from the indexedb database
@@ -34,10 +34,10 @@ export const getDb = async () => {
   const jateDb = await openDB ("jate", 1);
   const tx = jateDb.transaction("jate", "readonly");
   const store = tx.objectStore("jate");
-  const request = store.getAll();
+  const request = store.get(1);
   const result = await request;
-  console.log("Result value: ", result);
-  return result;
+  console.log("Result value: ", result.value);
+  return result?.value;
 };
 
 initdb();
