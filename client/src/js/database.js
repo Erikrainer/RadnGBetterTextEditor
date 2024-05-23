@@ -1,5 +1,6 @@
 import { openDB } from 'idb';
 
+// start the database and checks if exists, if not create one
 const initdb = async () =>
   openDB('jate', 1, {
     upgrade(db) {
@@ -12,6 +13,7 @@ const initdb = async () =>
     },
   });
 
+// it`s call put but it`s a post that add data to the database
 export const putDb = async (content) => {
   console.log('Post to the database');
   const jateDb = await openDB ("jate", 1);
@@ -26,7 +28,7 @@ export const putDb = async (content) => {
   console.log("Data saved to the daatabase", result);
 }
 
-
+// Get all the date from the indexedb database
 export const getDb = async () => {
   console.log('GET from the database');
   const jateDb = await openDB ("jate", 1);
