@@ -26,11 +26,15 @@ Deployed link: TBD
 
 To install dependencies, run these commands:
 
-TBD
+```
+npm run install
+```
+note: These commands should be executed under the main folder, or using the main package.json
+![Screenshot 2024-05-23 093439](https://github.com/Erikrainer/RandGBetterTextEditor/assets/160955635/b7b9a8e3-566a-4e0d-9554-a7126c908574)
 
 ## Usage 🏆
 
-TBD
+![Screenshot 2024-05-23 093510](https://github.com/Erikrainer/RandGBetterTextEditor/assets/160955635/d68a5d90-4c11-42b5-bf2e-1c05d6b07429)
 
 ## License 📛 
 
@@ -51,9 +55,7 @@ Erikrainer
 
 To run tests, run these commands:
 
-
 TBD
-
 
 ## Questions
 
