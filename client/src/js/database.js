@@ -13,7 +13,7 @@ const initdb = async () =>
     },
   });
 
-// it`s call put but it`s a post that add data to the database
+// it`s called put but it`s a post that add data to the database
 export const putDb = async (content) => {
   console.log('Post to the database');
   const jateDb = await openDB ("jate", 1);
