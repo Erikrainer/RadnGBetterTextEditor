@@ -28,7 +28,7 @@ export const putDb = async (content) => {
   console.log("Data saved to the daatabase", result.value);
 }
 
-// Get all the date from the indexedb database
+// Get data from the indexedb database
 export const getDb = async () => {
   console.log('GET from the database');
   const jateDb = await openDB ("jate", 1);
@@ -36,7 +36,8 @@ export const getDb = async () => {
   const store = tx.objectStore("jate");
   const request = store.get(1);
   const result = await request;
-  console.log("Result value: ", result.value);
+  result ? console.log("Result value: ", result.value) : 
+  console.log("No data found in the db");
   return result?.value;
 };
 
